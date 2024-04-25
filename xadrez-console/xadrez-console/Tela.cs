@@ -58,8 +58,8 @@ namespace xadrez_console
             return new PosicaoXadrez(coluna, linha);    
         }
 
-            public static void imprimirPeca(Peca peca)
-            {
+        public static void imprimirPeca(Peca peca)
+        {
 
             if (peca == null)
             {
@@ -79,7 +79,8 @@ namespace xadrez_console
                     Console.ForegroundColor = aux;
                 }
                 Console.Write(" ");
-            }  
+            }
+        }
         
     }
 }

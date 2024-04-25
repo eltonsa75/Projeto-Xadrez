@@ -12,6 +12,9 @@ namespace xadrez_console.tabuleiro
         Preta,
         Amarela,
         Azul,
+        Vermelha,
+        Verde,
+        Laranja
 
     }
 }

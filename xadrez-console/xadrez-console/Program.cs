@@ -10,6 +10,7 @@ namespace xadrez_console
     {
         static void Main(string[] args)
         {
+
            try
             {
             PartidaDeXadrez partida = new PartidaDeXadrez();
@@ -20,7 +21,8 @@ namespace xadrez_console
                     try
                     {
                         Console.Clear();
-                        Tela.imprimirTabuleiro(partida.tab);
+                        Tela.imprimirPartida(partida);
+
 
                         Console.WriteLine();
                         Console.Write("Origem: ");
@@ -32,6 +34,7 @@ namespace xadrez_console
 
                         Console.Clear();
                         Tela.imprimirTabuleiro(partida.tab, posicoesPossiveis);
+
                         Console.WriteLine();
                         Console.WriteLine("Turno: " + partida.turno);
                         Console.WriteLine("aguardando jogada: " + partida.jogadorAtual);

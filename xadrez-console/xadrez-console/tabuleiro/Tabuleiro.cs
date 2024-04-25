@@ -54,8 +54,6 @@ namespace tabuleiro
 
         }
 
-
-
         public bool posicaoValida(Posicao pos)
         {
             if (pos.linha < 0 || pos.linha >= linhas || pos.coluna < 0 || pos.coluna >= colunas)

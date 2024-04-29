@@ -5,10 +5,10 @@ namespace tabuleiro
 {
     abstract class Peca
     {
-        public Posicao posicao {  get; set; }
+        public Posicao posicao { get; set; }
         public Cor cor { get; protected set; }
-        public int qteMovimentos { get; set; }
-        public Tabuleiro tab {  get; set; }
+        public int qteMovimentos { get; protected set; }
+        public Tabuleiro tab { get; protected set; }
 
         public Peca(Tabuleiro tab, Cor cor)
         {
@@ -21,6 +21,11 @@ namespace tabuleiro
         public void incrementarQteMovimentos()
         {
             qteMovimentos++;
+        }
+
+        public void decrementarQteMovimentos()
+        {
+            qteMovimentos--;
         }
 
         public bool existeMovimentosPossiveis()
